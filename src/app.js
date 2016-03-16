@@ -136,7 +136,7 @@ var GameLayer = cc.Layer.extend({
         this._generateNewCandy();
         this._checkSucceedOrFail();
     },
-    _checkCandyExist: function () {//判断行和列是否在矩形范围内
+    _checkCandyExist: function (i,j) {//判断行和列是否在矩形范围内
         if(i >= 0 && i < Constant.MAP_SIZE && j >= 0 && j < Constant.MAP_SIZE){
             return true;
         }
