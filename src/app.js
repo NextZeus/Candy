@@ -90,7 +90,6 @@ var GameLayer = cc.Layer.extend({
     _onMouseDown: function (event) {
         var column = Math.floor((event.getLocationX() - this.mapPanel.x)/Constant.CANDY_WIDTH);
         var row = Math.floor((event.getLocationY() - this.mapPanel.y)/Constant.CANDY_WIDTH);
-        console.log('mouseDown',column,row);
         this._popCandy(column, row);
     },
     _popCandy: function (column, row) {
