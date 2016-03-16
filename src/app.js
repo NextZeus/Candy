@@ -1,5 +1,6 @@
 
 var GameLayer = cc.Layer.extend({
+
     mapPanel    :   null,
     ui          :   null,
 
@@ -9,11 +10,14 @@ var GameLayer = cc.Layer.extend({
     limitStep   :   0,
     targetScore :   0,
     map         :   null,
-
+    /**
+     * 糖果还在移动，不接受再次点击
+     */
     moving      :   false,
 
-    ctor:function () {
+    ctor:   function () {
         this._super();
+
         var size = cc.winSize;
 
         var bg = new cc.Sprite(res.bg);
@@ -48,6 +52,7 @@ var GameLayer = cc.Layer.extend({
         }
 
         this._init();
+
         this.ui = new GameUI(this);
         this.addChild(this.ui,3);
 
@@ -85,8 +90,8 @@ var GameLayer = cc.Layer.extend({
     _onMouseDown: function (event) {
         var column = Math.floor((event.getLocationX() - this.mapPanel.x)/Constant.CANDY_WIDTH);
         var row = Math.floor((event.getLocationY() - this.mapPanel.y)/Constant.CANDY_WIDTH);
+        console.log('mouseDown',column,row);
         this._popCandy(column, row);
-        return true;
     },
     _popCandy: function (column, row) {
         if(this.moving)
@@ -176,7 +181,7 @@ var GameLayer = cc.Layer.extend({
     _finishCandyFalls: function () {
         this.moving = false;
     },
-    _checkSuccessOrFail: function () {
+    _checkSucceedOrFail: function () {
         if(this.score > this.targetScore){
             this.ui.showSuccess();
             this.score += (this.limitStep - this.steps) * 30;
