@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+===================================================================
+
+Sprite sheet file created for UIKit using TexturePacker
+http://www.codeandweb.com/texturepacker
+
+===================================================================
+$TexturePacker:SmartUpdate:84714295e97e5d75fe348f5764250b3f:a5e97c302197d826e5cd5217eb5c3718:a469cf6ccfd489a193c132dead5e1216$
+-->
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+
+                        <key>1</key>
+			<dict>
+				<key>x</key><real>187</real>
+				<key>y</key><real>1283</real>
+				<key>w</key><real>54</real>
+				<key>h</key><real>63</real>
+				<key>oX</key><real>5</real>
+				<key>oY</key><real>1</real>
+				<key>oW</key><real>64</real>
+				<key>oH</key><real>64</real>
+				
+			</dict>
+                        <key>2</key>
+			<dict>
+				<key>x</key><real>129</real>
+				<key>y</key><real>1283</real>
+				<key>w</key><real>56</real>
+				<key>h</key><real>63</real>
+				<key>oX</key><real>3</real>
+				<key>oY</key><real>1</real>
+				<key>oW</key><real>64</real>
+				<key>oH</key><real>64</real>
+				
+			</dict>
+                        <key>3</key>
+			<dict>
+				<key>x</key><real>67</real>
+				<key>y</key><real>1283</real>
+				<key>w</key><real>60</real>
+				<key>h</key><real>63</real>
+				<key>oX</key><real>2</real>
+				<key>oY</key><real>1</real>
+				<key>oW</key><real>64</real>
+				<key>oH</key><real>64</real>
+				
+			</dict>
+                        <key>4</key>
+			<dict>
+				<key>x</key><real>1</real>
+				<key>y</key><real>1283</real>
+				<key>w</key><real>64</real>
+				<key>h</key><real>64</real>
+				
+				
+			</dict>
+                        <key>5</key>
+			<dict>
+				<key>x</key><real>243</real>
+				<key>y</key><real>1283</real>
+				<key>w</key><real>54</real>
+				<key>h</key><real>63</real>
+				<key>oX</key><real>5</real>
+				<key>oY</key><real>1</real>
+				<key>oW</key><real>64</real>
+				<key>oH</key><real>64</real>
+				
+			</dict>
+                        <key>bg</key>
+			<dict>
+				<key>x</key><real>1</real>
+				<key>y</key><real>1</real>
+				<key>w</key><real>720</real>
+				<key>h</key><real>1280</real>
+				
+				
+			</dict>
+		</dict>
+		<key>meta</key>
+		<dict>
+			<key>image</key>
+			<string>candy.png</string>
+			<key>width</key>
+			<integer>722</integer>
+			<key>height</key>
+			<integer>1348</integer>
+		</dict>
+	</dict>
+</plist>
